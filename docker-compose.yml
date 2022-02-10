@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  lenses:
+    image: lensesio/box
+    ports:
+      - "3030:3030"
+      - "9092:9092"
+      - "8082:8082"
+    volumes:
+      - ./data:/data      
