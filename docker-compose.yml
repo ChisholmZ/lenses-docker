@@ -7,4 +7,8 @@ services:
       - "9092:9092"
       - "8082:8082"
     volumes:
-      - ./data:/data      
+      - ./data:/data
+    environment:
+      ADV_HOST: ${ADV_HOST}
+      EULA: ${EULA}
+      SAMPLEDATA: ${SAMPLEDATA}
